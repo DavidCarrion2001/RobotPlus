@@ -10,11 +10,15 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <a href="index.html" class="logo">Ecommerce</a>
+                <div class="col-8 col-md-3">
+                    <a href="index.html">
+                        <img style="height: 100px;" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" />
+                    </a>
+                </div>
                 <nav>
-                    <a href="#">Tienda</a>
+                    <a href="/index.html">Tienda</a>
                     <a href="#">Nosotros</a>
-                    <a href="#">Login</a>
+                    <a href="/Login.html">Login</a>
                 </nav>
                 <div class="cart-icon">
                     <img src="./public/img/carrito.png" alt="Carrito">
@@ -24,58 +28,61 @@
         </div>
     </header>
     <main class="container">
-        <h1>Checkout</h1>
+        <h1>Su compra</h1>
         <div class="checkout-container">
             <div class="payment-options">
                 <div class="checkout-progress">
-                    <span>Address</span> - 
-                    <span>Shipping</span> - 
-                    <span class="active">Payment</span>
+                    <span>Dirección</span> - 
+                    <span>Envío</span> - 
+                    <span class="active">Pago</span>
                 </div>
                 <button class="paypal-btn">PayPal</button>
                 <button class="applepay-btn">Apple Pay</button>
-                <h2>Payment Details</h2>
+                <h2>Detalles del pago</h2>
                 <form>
-                    <input type="text" placeholder="Cardholder Name" required>
-                    <input type="text" placeholder="Card Number" required>
+                    <input type="text" placeholder="Nombre del titular" required>
+                    <input type="text" placeholder="Número de tarjeta de crédito o débito" required>
                     <div class="expiry-cvc">
-                        <input type="text" placeholder="Month" required>
-                        <input type="text" placeholder="Year" required>
-                        <input type="text" placeholder="CVC" required>
+                        <input type="text" placeholder="Mes" required>
+                        <input type="text" placeholder="Año" required>
+                        <input type="text" placeholder="CVV" required>
                     </div>
                     <label class="save-card">
-                        Save card data for future payments
+                        Guardar datos del método de pago para futuras compras
                         <input type="checkbox">
                     </label>
-                    <button type="submit">Pay with card</button>
+                    <button type="submit">Pagar con tarjeta</button>
                 </form>
             </div>
             <div class="order-summary">
-                <h2>Your cart</h2>
+                <h2>Su carrito</h2>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-aspiradora-v1.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASPIRADORA V1</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$100</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-asistente-v2.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASISTENTE QUAL-E 2.0</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$250</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
-                <input type="text" placeholder="Enter coupon code here">
-                <p>Subtotal: $200</p>
-                <p>Shipping: Calculated at the next step</p>
-                <p>Total: $200</p>
+                <input type="text" placeholder="Código del cupón">
+                <span style="font-weight: bold;">Subtotal: </span> <span style="margin-left: 1%;">$350</span>
+                <p><span style="font-weight: bold;">Envío: </span> <span style="margin-left: 6%;">Se calcula en el siguiente paso</span></p>
+                <hr>
+                <p><span style="font-weight: bold;">Total: </span> <span style="margin-left: 7.5%;">$350</span></p>
             </div>
         </div>
     </main>

@@ -10,11 +10,15 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <a href="index.html" class="logo">Ecommerce</a>
+                <div class="col-8 col-md-3">
+                    <a href="index.html">
+                        <img style="height: 100px;" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" />
+                    </a>
+                </div>
                 <nav>
-                    <a href="#">Tienda</a>
+                    <a href="/index.html">Tienda</a>
                     <a href="#">Nosotros</a>
-                    <a href="#">Login</a>
+                    <a href="/Login.html">Login</a>
                 </nav>
                 <div class="cart-icon">
                     <img src="./public/img/carrito.png" alt="Carrito">
@@ -24,56 +28,59 @@
         </div>
     </header>
     <main class="container">
-        <h1>Checkout</h1>
+        <h1>Compra</h1>
         <div class="checkout-container">
             <div class="shipping-form">
                 <div class="checkout-progress">
-                    <span class="active">Address</span> - 
-                    <span>Shipping</span> - 
-                    <span>Payment</span>
+                    <span class="active">Dirección</span> - 
+                    <span>Envío</span> - 
+                    <span>Pago</span>
                 </div>
-                <h2>Shipping Information</h2>
+                <h2>Información de envío</h2>
                 <form>
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="text" placeholder="Address" required>
-                    <input type="text" placeholder="Apartment, suite, etc (optional)">
-                    <input type="text" placeholder="City" required>
-                    <input type="text" placeholder="Country" required>
-                    <input type="text" placeholder="City" required>
-                    <input type="text" placeholder="Zipcode" required>
+                    <input type="text" placeholder="Primer nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="text" placeholder="Dirección de domicilio" required>
+                    <input type="text" placeholder="Número de apartamento, casa, etc. (opcional)">
+                    <input type="text" placeholder="País" required>
+                    <input type="text" placeholder="Departamento" required>
+                    <input type="text" placeholder="Distrito" required>
+                    <input type="text" placeholder="Código Postal" required>
                     <label>
-                        <input type="checkbox"> Save contact information
+                        <input type="checkbox"> Guardar información de envío
                     </label>
-                    <button type="submit">Continue to shipping</button>
+                    <button type="submit">Continuar con el envío</button>
                 </form>
             </div>
             <div class="order-summary">
-                <h2>Your cart</h2>
+                <h2>Tu carrito</h2>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-aspiradora-v1.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASPIRADORA V1</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$100</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-asistente-v2.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASISTENTE QUAL-E 2.0</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$250</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
-                <input type="text" placeholder="Enter coupon code here">
-                <p>Subtotal: $200</p>
-                <p>Shipping: Calculated at the next step</p>
-                <p>Total: $200</p>
+                <input type="text" placeholder="Código del cupón">
+                <span style="font-weight: bold;">Subtotal: </span> <span style="margin-left: 1%;">$350</span>
+                <p><span style="font-weight: bold;">Envío: </span> <span style="margin-left: 6%;">Se calcula en el siguiente paso</span></p>
+                <hr>
+                <p><span style="font-weight: bold;">Total: </span> <span style="margin-left: 7.5%;">$350</span></p>
             </div>
         </div>
     </main>

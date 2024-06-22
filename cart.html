@@ -10,11 +10,15 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <a href="index.html" class="logo">Ecommerce</a>
+                <div class="col-8 col-md-3">
+                    <a href="index.html">
+                        <img style="height: 100px;" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" />
+                    </a>
+                </div>
                 <nav>
-                    <a href="#">Tienda</a>
+                    <a href="/index.html">Tienda</a>
                     <a href="#">Nosotros</a>
-                    <a href="#">Login</a>
+                    <a href="/Login.html">Login</a>
                 </nav>
                 <div class="cart-icon">
                     <img src="./public/img/carrito.png" alt="Carrito">
@@ -28,48 +32,52 @@
         </div>
     </header>
     <main class="container">
-        <h1>Your cart</h1>
+        <h1>Su carrito</h1>
         <div class="cart-container">
             <div class="cart-items">
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-aspiradora-v1.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">NOMBRE PRODUCTO</p>
-                        <p class="item-accessories">Accesorios: A, B</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASPIRADORA V1</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$100</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
+                <hr>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-asistente-v2.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">NOMBRE PRODUCTO</p>
-                        <p class="item-accessories">Accesorios: A, E</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASISTENTE QUAL-E 2.0</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$250</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
             </div>
             <div class="order-summary">
-                <h2>Order Summary</h2>
-                <input type="text" placeholder="Enter coupon code here">
-                <p>Subtotal: $200</p>
+                <h2>Resumen del pedido</h2>
+                <input type="text" placeholder="Código del cupón">
+                <p>Subtotal: $350</p>
                 <p>Shipping: Calculated at the next step</p>
-                <p>Total: $200</p>
-                <button onclick="proceedToCheckout()">Continue to checkout</button>
+                <hr>
+                <p>Total: $350</p>
+                <button onclick="proceedToCheckout()">Continuar con la compra</button>
             </div>
         </div>
         <div class="order-information">
-            <h2>Order Information</h2>
+            <h2>Información adicional</h2>
             <details>
-                <summary>Return Policy</summary>
-                <p>This is our example return policy which is everything you need to know about our returns.</p>
+                <summary>Política de retorno</summary>
+                <p>Esta es la política de retorno (Chambea p David, paras de vago)</p>
             </details>
             <details>
-                <summary>Shipping Options</summary>
-                <p>Shipping Options details.</p>
+                <summary>Opciones de envío</summary>
+                <p>Detalle de las opciones de envío</p>
             </details>
         </div>
     </main>

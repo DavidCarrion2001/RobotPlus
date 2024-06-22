@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-    background-color: #fff;
+    background-color: gray;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -102,6 +102,7 @@ h1 {
 
 .item-details {
     flex: 1;
+    margin-left: 5%;
 }
 
 .item-name {

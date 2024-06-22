@@ -10,11 +10,15 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <a href="index.html" class="logo">Ecommerce</a>
+                <div class="col-8 col-md-3">
+                    <a href="index.html">
+                        <img style="height: 100px;" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" />
+                    </a>
+                </div>
                 <nav>
-                    <a href="#">Tienda</a>
+                    <a href="/index.html">Tienda</a>
                     <a href="#">Nosotros</a>
-                    <a href="#">Login</a>
+                    <a href="/Login.html">Login</a>
                 </nav>
                 <div class="cart-icon">
                     <img src="./public/img/carrito.png" alt="Carrito">
@@ -24,55 +28,58 @@
         </div>
     </header>
     <main class="container">
-        <h1>Checkout</h1>
+        <h1>Compra</h1>
         <div class="checkout-container">
             <div class="shipping-options">
                 <div class="checkout-progress">
-                    <span>Address</span> - 
-                    <span class="active">Shipping</span> - 
-                    <span>Payment</span>
+                    <span>Dirección</span> - 
+                    <span class="active">envío</span> - 
+                    <span>Pago</span>
                 </div>
-                <h2>Shipping</h2>
+                <h2>Método de envío</h2>
                 <form>
                     <label>
                         <input type="radio" name="shipping" value="ups-surepost" checked>
-                        UPS/USPS Surepost
-                        <span>4-7 Business Days</span>
+                        Serpost
+                        <span>4-7 días hábiles ($15)</span>
                     </label>
                     <label>
                         <input type="radio" name="shipping" value="ups-ground">
-                        UPS Ground Shipping
-                        <span>3-5 Business Days</span>
+                        DHL
+                        <span>3-5 días hábiles ($5)</span>
                     </label>
-                    <button type="submit">Continue to payment</button>
+                    <button type="submit">Continuar con el pago</button>
                 </form>
             </div>
             <div class="order-summary">
-                <h2>Your cart</h2>
+                <h2>Su carrito</h2>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-aspiradora-v1.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASPIRADORA V1</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$100</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
                 <div class="cart-item">
-                    <div class="item-image"></div>
+                    <div class="item-image">
+                        <img style="height: 100px;" src="./public/img/robot-asistente-v2.png" alt="">
+                    </div>
                     <div class="item-details">
-                        <p class="item-name">Men's winter jacket</p>
-                        <p class="item-size">Size: L</p>
-                        <p class="item-quantity">Quantity: 1</p>
-                        <p class="item-price">$99</p>
-                        <button class="remove-item">Remove</button>
+                        <p class="item-name">ROBOT ASISTENTE QUAL-E 2.0</p>
+                        <p class="item-quantity">Cantidad: 1</p>
+                        <p class="item-price">$250</p>
+                        <button class="remove-item">Quitar</button>
                     </div>
                 </div>
-                <input type="text" placeholder="Enter coupon code here">
-                <p>Subtotal: $200</p>
-                <p>Shipping: Calculated at the next step</p>
-                <p>Total: $200</p>
+                <input type="text" placeholder="Código del cupón">
+                <span style="font-weight: bold;">Subtotal: </span> <span style="margin-left: 1%;">$350</span>
+                <p><span style="font-weight: bold;">Envío: </span> <span style="margin-left: 6%;">Se calcula en el siguiente paso</span></p>
+                <hr>
+                <p><span style="font-weight: bold;">Total: </span> <span style="margin-left: 7.5%;">$350</span></p>
             </div>
         </div>
     </main>
