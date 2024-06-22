@@ -9,6 +9,7 @@
 
 .carrito {
   background-color: transparent;
+  margin-left: 15px; /* Espacio adicional antes del icono del carrito */
   border: none;
   max-width: 2rem;
   position: relative;
@@ -24,7 +25,7 @@
 
 .carrito:hover #carrito {
   display: block;
-  background-color: white;
+  background-color: rgb(255, 183, 0);
   padding: 10px;
   height: fit-content;
   min-width: 350px;
@@ -38,6 +39,10 @@
 
 #carrito img {
   width: 30px;
+
+
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #carrito .btn-danger {
@@ -813,4 +818,48 @@ button:not(:disabled),
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+a.me-3 {
+  margin-right: 30px; /* Ajusta el espacio a la derecha de cada enlace */
+  color: #fff; /* Asegúrate de que los enlaces sean visibles en un fondo oscuro */
+}
+a.me-3:hover {
+  color: #ff9900; /* Cambia de color al pasar el ratón */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Alinear los botones al inicio del contenedor */
+  align-items: center;
+  margin-right: 20px; /* Añade espacio a la derecha para separar del logo */
+}
+
+.btn-primary {
+  margin-right: 10px; /* Espacio entre los botones */
+  width: 50px;  /* Tamaño de los botones */
+  height: 50px; /* Tamaño de los botones */
+  font-size: 20px; /* Tamaño del texto dentro de los botones */
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+.Logo {
+  width: 17%;
+  display:block;
+  margin:auto;
+}
+
+.Interaccion {
+  display:block;
+  margin:right;
 }
