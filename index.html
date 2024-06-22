@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/index.css">
+    <script src="src/index.js"></script>
+
 </head>
 <body>
     <header class="py-5 header">
@@ -20,6 +22,10 @@
                     </a>
                 </div>
                 <nav class="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
+                    
+                    <a href="/01-GuitarLA-HTMLCSS-Inicio/Login.html" class="me-3">Iniciar sesión</a>
+                    <a href="register.html" class="me-3">Registrarse</a>
+                    
                     <div 
                         class="carrito"
                     >
@@ -88,7 +94,7 @@
         <div class="row mt-5">
             <div class="col-md-6 col-lg-4 my-4 row align-items-center">
                 <div class="col-4">
-                    <img class="img-fluid" src="./public/img/guitarra_01.jpg" alt="imagen guitarra" />
+                    <img class="img-fluid" src="./public/img/guitarra_01.jpg" alt="imagen guitarra" onclick="openPopup('detalle_guitarra_01.html', 'Detalle Guitarra Lukather')" style="cursor:pointer;"/>
                 </div>
                 <div class="col-8">
                     <h3 class="text-black fs-4 fw-bold text-uppercase">Lukather</h3>
@@ -100,6 +106,18 @@
                     >Agregar al Carrito</button>
                 </div>
             </div>
+
+
+            <!-- Modal Structure -->
+<div id="productModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1 id="productName"></h1>
+        <iframe id="productVideo" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
 
             <div class="col-md-6 col-lg-4 my-4 row align-items-center">
                 <div class="col-4">
