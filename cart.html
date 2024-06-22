@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su carrito de compras</title>
+    <link rel="stylesheet" href="src/cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html" class="logo">Ecommerce</a>
+                <nav>
+                    <a href="#">Tienda</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Login</a>
+                </nav>
+                <div class="cart-icon">
+                    <img src="./public/img/carrito.png" alt="Carrito">
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="text-size-controls">
+                <button id="increase-text">Aumentar</button>
+                <button id="decrease-text">Disminuir</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Your cart</h1>
+        <div class="cart-container">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-details">
+                        <p class="item-name">NOMBRE PRODUCTO</p>
+                        <p class="item-accessories">Accesorios: A, B</p>
+                        <p class="item-quantity">Quantity: 1</p>
+                        <p class="item-price">$99</p>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="item-image"></div>
+                    <div class="item-details">
+                        <p class="item-name">NOMBRE PRODUCTO</p>
+                        <p class="item-accessories">Accesorios: A, E</p>
+                        <p class="item-quantity">Quantity: 1</p>
+                        <p class="item-price">$99</p>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <input type="text" placeholder="Enter coupon code here">
+                <p>Subtotal: $200</p>
+                <p>Shipping: Calculated at the next step</p>
+                <p>Total: $200</p>
+                <button onclick="proceedToCheckout()">Continue to checkout</button>
+            </div>
+        </div>
+        <div class="order-information">
+            <h2>Order Information</h2>
+            <details>
+                <summary>Return Policy</summary>
+                <p>This is our example return policy which is everything you need to know about our returns.</p>
+            </details>
+            <details>
+                <summary>Shipping Options</summary>
+                <p>Shipping Options details.</p>
+            </details>
+        </div>
+    </main>
+    <script src="/component/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #000;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout-progress {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-progress span {
+    padding: 0 10px;
+    color: #333;
+}
+
+.checkout-progress .active {
+    font-weight: bold;
+}
+
+.payment-options {
+    width: 60%;
+}
+
+.payment-options h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-options button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-options .paypal-btn {
+    background-color: #003087;
+}
+
+.payment-options .applepay-btn {
+    background-color: black;
+}
+
+.payment-options form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment-options form .expiry-cvc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-options form .expiry-cvc input {
+    width: 32%;
+}
+
+.payment-options form label.save-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.payment-options form button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-options form button:hover {
+    background-color: #333;
+}
+
+.order-summary {
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+}
+
+.order-summary .cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-size,
+.item-quantity,
+.item-price {
+    margin: 5px 0;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    padding: 0;
+}
+
+.order-summary input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-summary p {
+    margin: 10px 0;
+}
