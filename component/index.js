@@ -185,12 +185,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    let tooltipsEnabled = false; 
+    // Recuperar el estado guardado o inicializarlo como falso
+    let tooltipsEnabled = localStorage.getItem('tooltipsEnabled') === 'true'; 
 
     const toggleButton = document.getElementById('toggleTooltips');
+    toggleButton.textContent = tooltipsEnabled ? 'Desactivar Tooltips' : 'Activar Tooltips'; // Ajustar el texto del botón según el estado
     toggleButton.addEventListener('click', () => {
         tooltipsEnabled = !tooltipsEnabled;
-        toggleButton.textContent = tooltipsEnabled ? 'Tooltips desactivados' : 'Tooltips activados';
+        toggleButton.textContent = tooltipsEnabled ? 'Desactivar Tooltips' : 'Activar Tooltips';
+        localStorage.setItem('tooltipsEnabled', tooltipsEnabled); // Guardar el nuevo estado en localStorage
     });
 
     const elementsWithTooltips = document.querySelectorAll('[data-tooltip]');
@@ -217,6 +220,58 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('styleToggle');
+    // Recuperar el estado guardado o inicializarlo como normal (0)
+    let styleIndex = parseInt(localStorage.getItem('styleIndex')) || 0;
+
+    // Aplicar el estilo inicial basado en el valor recuperado
+    applyStyles(styleIndex);
+
+    button.addEventListener('click', () => {
+        // Incrementar el índice de estilo y aplicar nuevas clases
+        styleIndex = (styleIndex + 1) % 3;
+        localStorage.setItem('styleIndex', styleIndex); // Guardar el nuevo estado en localStorage
+        applyStyles(styleIndex);
+    });
+
+    function applyStyles(styleIndex) {
+        const images = document.querySelectorAll('img');
+        const texts = document.querySelectorAll('body, p, h1, h2, h3, a'); // Ajustar según necesidad
+
+        // Eliminar clases anteriores
+        images.forEach(img => {
+            img.classList.remove('saturate-low', 'saturate-high');
+        });
+        texts.forEach(text => {
+            text.classList.remove('text-color-low', 'text-color-high');
+        });
+
+        switch (styleIndex) {
+            case 1: // Estilo Bajo
+                images.forEach(img => img.classList.add('saturate-low'));
+                texts.forEach(text => text.classList.add('text-color-low'));
+                button.textContent = 'Saturación Bajo';
+                break;
+            case 2: // Estilo Alto
+                images.forEach(img => img.classList.add('saturate-high'));
+                texts.forEach(text => text.classList.add('text-color-high'));
+                button.textContent = 'Saturación Alto';
+                break;
+            default: // Estilo Normal
+                button.textContent = 'Saturación Normal';
+                break;
+        }
+    }
+});
+
+
+
 
 
 

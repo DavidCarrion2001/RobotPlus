@@ -10,11 +10,12 @@
 <body>
     <div class="col-md-1 button-container">
         <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
+        <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
     </div>
 
 
-    
-    <div class="signup-container">
+
+    <div class="signup-container" data-tooltip="Llenar información para poder crear tu propia cuenta">
         <h1>Registrarse</h1>
         <p>Ingresa tu información para crear la cuenta.</p>
         <form action="/submit-your-signup-form" method="POST">

@@ -902,3 +902,27 @@ a.me-3:hover {
   border-color: transparent #fff transparent transparent;
 }
 
+
+
+
+/* Saturación para imágenes */
+.saturate-low {
+  filter: saturate(0.5); /* Menor saturación */
+}
+
+.saturate-high {
+  filter: saturate(2); /* Mayor saturación */
+}
+
+/* Color de texto, este puede ajustarse si es necesario */
+.text-color-low {
+  color: #555; /* Gris más claro */
+}
+
+.text-color-high {
+  color: #ff4500; /* Rojo anaranjado intenso */
+}
+
+
+
+

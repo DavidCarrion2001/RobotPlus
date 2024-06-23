@@ -18,7 +18,7 @@
             <div class="row justify-content-center justify-content-md-between">
                 <div class="col-8 col-md-3">
                     <a href="index.html">
-                        <img tabindex="0" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" data-tooltip="Logo de la compania, click y devuelve a pagina principal"/>
+                        <img tabindex="0" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" data-tooltip="Logo de la compañia, click y devuelve a pagina principal"/>
                     </a>
                 </div>
                 <nav tabindex="0" class="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
@@ -29,9 +29,9 @@
                     <div 
                         class="carrito"
                     >
-                        <img class="img-fluid" src="./public/img/carrito.png" alt="imagen carrito" />
+                        <img class="img-fluid" src="./public/img/carrito.png" alt="imagen carrito" data-tooltip="Carrito de compras, comprar y agregar"/>
 
-                        <div id="carrito" class="bg-white p-3">
+                        <div id="carrito" class="bg-white p-3" data-tooltip="Productos deseados y costo total">
                             <p class="text-center">El carrito esta vacio</p>
                             <table class="w-100 table">
                                 <thead>
@@ -90,17 +90,16 @@
     </header>
 
     <main class="container-xl mt-5">
-        <h2 style="color:#6db300" class="text-center">Nuestros productos</h2>
+        <h2 style="color:#6db300" class="text-center" data-tooltip="Presentación de productos">Nuestros productos</h2>
         
         <div class="col-md-1 button-container">
-            <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
-            <button id="cursorToggle" class="btn btn-large btn-primary minus">Cambiar Tamaño del Cursor</button>
-            <button id="toggleTooltips" class="btn btn-large btn-primary minus">Tooltips desactivados</button>
+            <button type="button" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar la letra en 3 niveles">Tamaño de letra</button>
+            <button id="cursorToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar el cursos del mouse">Cambiar Tamaño del Cursor</button>
+            <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
+            <button id="styleToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para poner niveles de saturación">Cambiar Saturación</button>
 
 
         </div>        
-
-
 
 
         
