@@ -243,3 +243,19 @@ body.tritanopia {
 body.achromatopsia {
     filter: grayscale(100%);
 }
+
+.cursor-normal {
+    cursor: auto;
+  }
+  
+  .cursor-large {
+    cursor: url('/public/img/cursor-mediano.cur'), auto;
+  }
+  
+  .cursor-larger {
+    cursor: url('/public/img/cursor-grande.cur'), auto;
+  }
+  
+  .cursor-largest {
+    cursor: url('/public/img/cursor-extragrande2.cur'), auto;
+  }

@@ -863,15 +863,15 @@ a.me-3:hover {
 }
 
 .cursor-large {
-  cursor: url('/public/img/25222.png'), auto;
+  cursor: url('/public/img/cursor-mediano.cur'), auto;
 }
 
 .cursor-larger {
-  cursor: url('/public/img/Cursor.png'), auto;
+  cursor: url('/public/img/cursor-grande.cur'), auto;
 }
 
 .cursor-largest {
-  cursor: url('/public/img/precision.png'), auto;
+  cursor: url('/public/img/cursor-extragrande2.cur'), auto;
 }
 
 
