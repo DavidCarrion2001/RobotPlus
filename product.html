@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="src/product.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="col-8 col-md-3">
+                    <a href="index.html">
+                        <img style="height: 100px;" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" data-tooltip="Logo de la compañia, click y devuelve a pagina principal"/>
+                    </a>
+                </div>
+                <div class="cart-icon">
+                    <img src="./public/img/carrito.png" alt="Carrito">
+                    <span class="cart-count">1</span>
+                </div>
+                <div class="user-info">
+                    <span>Perfil</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container product-container">
+        <div class="product-images">
+            <div class="image-grid">
+                <div class="image-placeholder">
+                    <img style="width: 100%; height: 100%;" src="./public/img/robot-aspiradora-v1.png" alt="">
+                </div>
+                <div class="image-placeholder">
+                    <img style="width: 100%; height: 100%;" src="./public/img/robot-aspiradora-v1-2.png" alt="">
+                </div>
+                <div class="image-placeholder">
+                    <img style="width: 100%; height: 100%;" src="./public/img/robot-aspiradora-v1-3.png" alt="">
+                </div>
+                <div class="image-placeholder">
+                    <img style="width: 100%; height: 100%;" src="./public/img/robot-aspiradora-v1-4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>ROBOT ASPIRADORA V1</h1>
+            <p class="price">$100</p>
+            <p class="description">Un robot aspiradora simple, cumple su función de limpiar todo tipo de polvo o suciedad de las superficies de tu casa</p>
+            <label for="color">Color</label>
+            <select id="color">
+                <option value="default">Elegir color</option>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+            </select>
+            <label for="powerups">Power ups</label>
+            <div id="powerups">
+                <button>Protanopia</button>
+                <button>Deuteranopia</button>
+                <button>Tritanopia</button>
+                <button>Achromatopsia</button>
+                <button>Normal</button>
+            </div>
+            <p>Free standard shipping</p>
+            <p>Free Returns</p>
+            <p>Height of model: 189 cm / 6’2”</p>
+            <label for="quantity">Cantidad</label>
+            <div class="quantity-controls">
+                <button class="decrease">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">Agregar a carrito</button>
+        </div>
+    </main>
+    <section class="reviews">
+        <h2>Reviews</h2>
+        <button class="add-to-cart">Escribir review</button>
+        <div class="review">
+            <h3>Me encantó el producto!</h3>
+            <label for="review-rating">5 estrellas</label>
+            <p>Este producto me ha salvado la vida, gracias a este robot ahora mi casa está más limpia y saqué 20 en HCI :)</p>
+            <p class="review-meta">Junio 23, 2024 | David Carrión</p>
+        </div>
+    </section>
+    <footer>
+        <div class="help-section">
+            <h2>NECESITAS AYUDA?</h2>
+            <p>Envíanos tu número de Whatsapp y te escribiremos a la brevedad.</p>
+            <input type="text" placeholder="Número de celular">
+            <button>whatsapp</button>
+        </div>
+        <div class="footer-links">
+            <h2>Ayuda</h2>
+            <a href="#">Centro de Ayuda</a>
+            <a href="#">Status de Pedido</a>
+            <a href="#">Devoluciones y Garantía</a>
+        </div>
+    </footer>
+    <script src="/component/product.js"></script>
+</body>
+</html>
