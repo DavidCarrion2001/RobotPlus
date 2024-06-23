@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/product.css">
     <script src="/component/index.js"></script>
 
 </head>
@@ -92,17 +93,20 @@
     <main class="container-xl mt-5">
         <h2 style="color:#6db300" class="text-center" data-tooltip="Presentación de productos">Nuestros productos</h2>
         
-        <div class="col-md-1 button-container">
+        <div style="width: 50%; margin: 0 auto;" class="col-md-1 button-container">
             <button type="button" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar la letra en 3 niveles">Tamaño de letra</button>
             <button id="cursorToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar el cursos del mouse">Cambiar Tamaño del Cursor</button>
             <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
             <button id="styleToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para poner niveles de saturación">Cambiar Saturación</button>
+        </div>    
+        <div style="width: 50%; margin: 0 auto;" id="powerups">
+            <button>Protanopia</button>
+            <button>Deuteranopia</button>
+            <button>Tritanopia</button>
+            <button>Achromatopsia</button>
+            <button>Normal</button>
+        </div> 
 
-
-        </div>        
-
-
-        
         <div class="row mt-5">
             <div class="col-md-6 col-lg-4 my-4 row align-items-center">
                 <div class="col-4">
@@ -299,5 +303,6 @@
             <p class="text-white text-center fs-4 mt-4 m-md-0">RobotPlus - Todos los derechos Reservados 2024</p>
         </div>
     </footer>
+    <script src="/component/product.js"></script>
 </body>
 </html>
