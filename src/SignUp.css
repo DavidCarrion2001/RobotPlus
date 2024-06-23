@@ -83,7 +83,36 @@ button:hover {
 }
 
 .return-home a {
-    color: #4b8bef; /* Usa un color que se destaque o que siga la paleta de tu sitio */
+    color: #01dd08; /* Usa un color que se destaque o que siga la paleta de tu sitio */
     text-decoration: none; /* Opcional: elimina el subrayado del enlace */
 }
+
+
+
+.tooltip {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 90px rgb(238, 255, 0);
+    font-size: 12px;
+    z-index: 1000; /* Asegura que el tooltip esté sobre otros elementos */
+    pointer-events: none; /* Evita que el tooltip interfiera con el mouse */
+  }
+  
+  
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
+
+
+
+
 

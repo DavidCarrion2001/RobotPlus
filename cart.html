@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Su carrito de compras</title>
     <link rel="stylesheet" href="src/cart.css">
+    <script src="/component/index.js"></script>
 </head>
 <body>
+    <div class="col-md-1 button-container">
+        <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
+    </div>
+
+    
     <header class="header">
         <div class="container">
             <div class="navbar">
@@ -25,9 +31,10 @@
                     <span class="cart-count">0</span>
                 </div>
             </div>
-            <div class="text-size-controls">
-                <button id="increase-text">Aumentar</button>
-                <button id="decrease-text">Disminuir</button>
+            <div class="col-md-1 button-container">
+                <p style="font-size:larger;">Tamaño de las letras</p>
+                <button type="button" class="btn btn-large btn-primary minus">-</button>
+                <button type="button" class="btn btn-large btn-primary plus">+</button>
             </div>
         </div>
     </header>

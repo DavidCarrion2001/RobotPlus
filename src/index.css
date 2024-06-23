@@ -838,17 +838,67 @@ a.me-3:hover {
   margin-right: 20px; /* Añade espacio a la derecha para separar del logo */
 }
 
-.btn-primary {
-  margin-right: 10px; /* Espacio entre los botones */
-  width: 50px;  /* Tamaño de los botones */
-  height: 50px; /* Tamaño de los botones */
-  font-size: 20px; /* Tamaño del texto dentro de los botones */
-  color: white;
-  background-color: #007bff;
-  border: none;
-  cursor: pointer;
+.btn-large.btn-primary {
+  padding: 10px 20px; /* Asegúrate de que el botón es suficientemente grande*/
+  font-size: 16px; /*Tamaño de texto claro*/
+  width: auto; /*Permite que el botón cambie de tamaño según el contenido*/
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #01dd08;
 }
+
+
+
+
+:root {
+  --base-font-size: 12px; /* Define un tamaño base para toda la página*/
+}
+
+
+
+/* Estilos para el cursor normal y grande */
+.cursor-normal {
+  cursor: auto;
+}
+
+.cursor-large {
+  cursor: url('/public/img/25222.png'), auto;
+}
+
+.cursor-larger {
+  cursor: url('/public/img/Cursor.png'), auto;
+}
+
+.cursor-largest {
+  cursor: url('/public/img/precision.png'), auto;
+}
+
+
+
+
+
+
+.tooltip {
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 90px rgb(238, 255, 0);
+  font-size: 12px;
+  z-index: 1000; /* Asegura que el tooltip esté sobre otros elementos */
+  pointer-events: none; /* Evita que el tooltip interfiera con el mouse */
+}
+
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
+

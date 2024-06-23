@@ -18,13 +18,13 @@
             <div class="row justify-content-center justify-content-md-between">
                 <div class="col-8 col-md-3">
                     <a href="index.html">
-                        <img class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" />
+                        <img tabindex="0" class="img-fluid" src="./public/img/robot-plus.png" alt="imagen logo" data-tooltip="Logo de la compania, click y devuelve a pagina principal"/>
                     </a>
                 </div>
-                <nav class="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
+                <nav tabindex="0" class="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
                     
-                    <a href="/Login.html" class="me-3">Iniciar sesión</a>
-                    <a href="/SignUp.html" class="me-3">Registrarse</a>
+                    <a tabindex="0" href="/Login.html" class="me-3" data-tooltip="Haz clic para iniciar sesión">Iniciar sesión</a>
+                    <a tabindex="0" href="/SignUp.html" class="me-3" data-tooltip="Haz clic para registrarte en la pagina">Registrarse</a>
 
                     <div 
                         class="carrito"
@@ -93,10 +93,16 @@
         <h2 style="color:#6db300" class="text-center">Nuestros productos</h2>
         
         <div class="col-md-1 button-container">
-            <p style="font-size:larger;">Tamaño de las letras</p>
-            <button type="button" class="btn btn-large btn-primary minus">-</button>
-            <button type="button" class="btn btn-large btn-primary plus">+</button>
-        </div>
+            <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
+            <button id="cursorToggle" class="btn btn-large btn-primary minus">Cambiar Tamaño del Cursor</button>
+            <button id="toggleTooltips" class="btn btn-large btn-primary minus">Tooltips desactivados</button>
+
+
+        </div>        
+
+
+
+
         
         <div class="row mt-5">
             <div class="col-md-6 col-lg-4 my-4 row align-items-center">

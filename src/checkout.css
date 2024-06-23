@@ -174,3 +174,43 @@ h1 {
 .order-summary p {
     margin: 10px 0;
 }
+
+
+.btn-large.btn-primary {
+    padding: 10px 20px; /* Asegúrate de que el botón es suficientemente grande*/
+    font-size: 16px; /*Tamaño de texto claro*/
+    width: auto; /*Permite que el botón cambie de tamaño según el contenido*/
+  }
+  
+  .btn-primary:hover {
+    background-color: #01dd08;
+  }
+
+
+
+
+
+
+
+  .tooltip {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 90px rgb(238, 255, 0);
+    font-size: 12px;
+    z-index: 1000; /* Asegura que el tooltip esté sobre otros elementos */
+    pointer-events: none; /* Evita que el tooltip interfiera con el mouse */
+  }
+  
+  
+  .tooltip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
