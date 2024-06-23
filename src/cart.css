@@ -189,11 +189,11 @@ details summary {
   
   .btn-primary {
     margin-right: 10px; /* Espacio entre los botones */
-    width: 50px;  /* Tamaño de los botones */
-    height: 50px; /* Tamaño de los botones */
+    width: 1oopx;  /* Tamaño de los botones */
+    height: 100%; /* Tamaño de los botones */
     font-size: 20px; /* Tamaño del texto dentro de los botones */
-    color: white;
-    background-color: #007bff;
+    color: black;
+    background-color: white;
     border: none;
     cursor: pointer;
   }

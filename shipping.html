@@ -6,15 +6,9 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="src/shipping.css">
     <script src="/component/index.js"></script>
+    <link rel="stylesheet" href="src/product.css">
 </head>
 <body>
-
-    <div class="col-md-1 button-container">
-        <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
-        <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
-    </div>
-
-
 
     <header class="header">
         <div class="container">
@@ -34,6 +28,19 @@
                     <span class="cart-count">3</span>
                 </div>
             </div>
+            <div style="width: 50%; margin: 0 auto;" class="col-md-1 button-container">
+                <button style="border-radius: 20px; font-weight: bold;" type="button" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar la letra en 3 niveles">Tamaño de letra</button>
+                <button style="border-radius: 20px; font-weight: bold;" id="cursorToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para agrandar el cursos del mouse">Cambiar Tamaño del Cursor</button>
+                <button style="border-radius: 20px; font-weight: bold;" id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
+                <button style="border-radius: 20px; font-weight: bold;" id="styleToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para poner niveles de saturación">Cambiar Saturación</button>
+            </div>    
+            <div style="width: 50%; margin: 0 auto;" id="powerups">
+                <button style="border-radius: 20px; font-weight: bold; font-size:100%;" class="btn btn-large btn-primary minus">Protanopia</button>
+                <button style="border-radius: 20px; font-weight: bold; font-size:100%;" class="btn btn-large btn-primary minus">Deuteranopia</button>
+                <button style="border-radius: 20px; font-weight: bold; font-size:100%;" class="btn btn-large btn-primary minus">Tritanopia</button>
+                <button style="border-radius: 20px; font-weight: bold; font-size:100%;" class="btn btn-large btn-primary minus">Achromatopsia</button>
+                <button style="border-radius: 20px; font-weight: bold; font-size:100%;" class="btn btn-large btn-primary minus">Normal</button>
+            </div> 
         </div>
     </header>
     <main class="container">
@@ -70,7 +77,7 @@
                         <p class="item-name">ROBOT ASPIRADORA V1</p>
                         <p class="item-quantity">Cantidad: 1</p>
                         <p class="item-price">$100</p>
-                        <button class="remove-item">Quitar</button>
+                        <button style="font-weight: bolder;" class="remove-item">Quitar</button>
                     </div>
                 </div>
                 <div class="cart-item">
@@ -81,7 +88,7 @@
                         <p class="item-name">ROBOT ASISTENTE QUAL-E 2.0</p>
                         <p class="item-quantity">Cantidad: 1</p>
                         <p class="item-price">$250</p>
-                        <button class="remove-item">Quitar</button>
+                        <button style="font-weight: bolder;" class="remove-item">Quitar</button>
                     </div>
                 </div>
                 <input type="text" placeholder="Código del cupón">
@@ -93,5 +100,6 @@
         </div>
     </main>
     <script src="/component/shipping.js"></script>
+    <script src="/component/product.js"></script>
 </body>
 </html>
