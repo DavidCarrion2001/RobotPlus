@@ -8,13 +8,6 @@
     <script src="/component/index.js"></script>
 </head>
 <body>
-    <div class="col-md-1 button-container">
-        <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
-        <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
-    </div>
-
-
-
     <div class="signup-container" data-tooltip="Llenar información para poder crear tu propia cuenta">
         <h1>Registrarse</h1>
         <p>Ingresa tu información para crear la cuenta.</p>
@@ -40,6 +33,11 @@
         <button class="google-login">Registrarse con Google</button>
         <p class="login-text">¿Ya tienes una cuenta? <a href="/login.html">Iniciar Sesión</a></p>
         <p class="return-home">Regresar al inicio, <a href="index.html">click aquí</a>.</p>
+        <div style="width: 50%; margin: 0 auto;" class="col-md-1 button-container">
+            <button type="button" class="btn btn-large btn-primary minus">Tamaño de letra</button>
+            <button id="toggleTooltips" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para activar y desactivar los Tooltips">Tooltips desactivados</button>
+            <button id="styleToggle" class="btn btn-large btn-primary minus" data-tooltip="Haz clic para poner niveles de saturación">Cambiar Saturación</button>
+        </div>
     </div>
 </body>
 </html>
