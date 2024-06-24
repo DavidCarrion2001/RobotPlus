@@ -8,57 +8,18 @@ function openPopup(url, title) {
     window.open(url, title, popupOptions);
 }
 
-function openModal(productName, videoUrl) {
-    document.getElementById('productModal').style.display = 'flex';
-    document.getElementById('productName').innerText = productName;
-    document.getElementById('productVideo').src = videoUrl;
-}
 
-function closeModal() {
-    document.getElementById('productModal').style.display = 'none';
-    document.getElementById('productVideo').src = '';
-}
 
-// Cerrar el modal al hacer clic fuera del contenido
-window.onclick = function(event) {
-    let modal = document.getElementById('productModal');
-    if (event.target === modal) {
-        closeModal();
-    }
-}
-
-//Hacer crecer la letra de las paginas
-// document.addEventListener('DOMContentLoaded', function() {
-//     const root = document.documentElement; // Acceder al elemento raíz del documento
-//     const increaseBtn = document.querySelector('.btn-large.btn-primary.plus'); // Botón +
-//     const decreaseBtn = document.querySelector('.btn-large.btn-primary.minus'); // Botón -
-
-//     // Función para cambiar el tamaño de la fuente
-//     function changeFontSize(change) {
-//         const currentSize = parseFloat(getComputedStyle(root).fontSize);
-//         root.style.fontSize = `${currentSize + change}px`;
-//         localStorage.setItem('fontSize', root.style.fontSize); // Guardar el tamaño en localStorage
-//     }
-
-//     // Eventos de clic para los botones
-//     increaseBtn.addEventListener('click', () => changeFontSize(1)); // Aumentar la fuente
-//     decreaseBtn.addEventListener('click', () => changeFontSize(-1)); // Disminuir la fuente
-
-//     // Aplicar el tamaño de la fuente guardado al cargar la página
-//     if (localStorage.getItem('fontSize')) {
-//         root.style.fontSize = localStorage.getItem('fontSize');
-//     }
-// });
 
 document.addEventListener('DOMContentLoaded', function() {
     const root = document.documentElement;
     const fontSizeBtn = document.querySelector('.btn-large.btn-primary');
-    const fontSizeChanges = [0, 2, 4, 6]; // Cambios en px sobre el tamaño base
+    const fontSizeChanges = [0, 4, 8, 12]; // Cambios en px sobre el tamaño base
     let fontSizeLevel = 0; // Nivel de incremento actual
 
     // Función para actualizar el tamaño de la fuente
     function applyFontSize() {
-        const baseSize = 12; // Asumimos un tamaño base de 12px para simplificar
+        const baseSize = 16; // Asumimos un tamaño base de 16px para simplificar
         let currentSize = parseFloat(localStorage.getItem('fontSize') || baseSize);
         root.style.fontSize = `${currentSize}px`;
         // Actualizar el nivel de tamaño basado en el tamaño actual
@@ -70,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para cambiar el tamaño de la fuente
     function updateFontSize() {
         fontSizeLevel = (fontSizeLevel + 1) % fontSizeChanges.length;
-        const baseSize = 12;
+        const baseSize = 16;
         const newSize = baseSize + fontSizeChanges[fontSizeLevel];
         localStorage.setItem('fontSize', newSize);
         applyFontSize();
@@ -124,27 +85,6 @@ document.addEventListener('keydown', function(event) {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('cursorToggle');
-    let isLarge = false; // Estado inicial del cursor
-
-    button.addEventListener('click', function() {
-        if (isLarge) {
-            // Cambia a cursor normal
-            document.body.classList.remove('cursor-large');
-            document.body.classList.add('cursor-normal');
-            button.textContent = 'Cursor Normal';
-            isLarge = false;
-        } else {
-            // Cambia a cursor grande
-            document.body.classList.remove('cursor-normal');
-            document.body.classList.add('cursor-large');
-            button.textContent = 'Cursor Grande';
-            isLarge = true;
-        }
-    });
-});
 
 
 
@@ -253,17 +193,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         switch (styleIndex) {
-            case 1: // Estilo Bajo
+            case 1: // Saturación Bajo
                 images.forEach(img => img.classList.add('saturate-low'));
                 texts.forEach(text => text.classList.add('text-color-low'));
                 button.textContent = 'Saturación Bajo';
                 break;
-            case 2: // Estilo Alto
+            case 2: // Saturación Alto
                 images.forEach(img => img.classList.add('saturate-high'));
                 texts.forEach(text => text.classList.add('text-color-high'));
                 button.textContent = 'Saturación Alto';
                 break;
-            default: // Estilo Normal
+            default: // Saturación Normal
                 button.textContent = 'Saturación Normal';
                 break;
         }
